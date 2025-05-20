@@ -1,7 +1,64 @@
 # depslib dependency file v1.0
-1747479964 source:d:\desktop\library\main.cpp
+1747751671 source:d:\desktop\library\main.cpp
 	<iostream>
+	<Book.h>
+	<Library.h>
+	<User.h>
+	<Admin.h>
+	<Member.h>
+	<AppController.h>
+
+1747686498 source:d:\desktop\library\src\book.cpp
+	"Book.h"
+	<iostream>
+
+1747733529 d:\desktop\library\include\book.h
 	<string>
+
+1747741484 source:d:\desktop\library\src\user.cpp
+	"User.h"
+
+1747740176 d:\desktop\library\include\user.h
+	<Library.h>
+
+1747734423 d:\desktop\library\include\library.h
+	<Book.h>
 	<vector>
+
+1747753122 source:d:\desktop\library\src\admin.cpp
+	"Admin.h"
+	<iostream>
+
+1747737561 d:\desktop\library\include\admin.h
+	<Library.h>
+	<User.h>
+
+1747752450 source:d:\desktop\library\src\member.cpp
+	"Member.h"
+	<iostream>
+
+1747737561 d:\desktop\library\include\member.h
+	<Library.h>
+	<Book.h>
+	<User.h>
+
+1747734567 source:d:\desktop\library\src\library.cpp
+	"Library.h"
 	<fstream>
+	<iostream>
+
+1747730111 source:d:\desktop\library\src\libraryy.cpp
+	"Libraryy.h"
+
+1747730111 d:\desktop\library\include\libraryy.h
+
+1747753011 source:d:\desktop\library\src\appcontroller.cpp
+	"AppController.h"
+	<iostream>
+
+1747749933 d:\desktop\library\include\appcontroller.h
+	"User.h"
+	"Library.h"
+	"Admin.h"
+	"Member.h"
 

@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +34,18 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Admin.h" />
+		<Unit filename="include/Book.h" />
+		<Unit filename="include/Library.h" />
+		<Unit filename="include/Member.h" />
+		<Unit filename="include/User.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Admin.cpp" />
+		<Unit filename="src/Book.cpp" />
+		<Unit filename="src/Library.cpp" />
+		<Unit filename="src/Libraryy.cpp" />
+		<Unit filename="src/Member.cpp" />
+		<Unit filename="src/User.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
