@@ -1,14 +1,14 @@
 #ifndef BOOKSTORAGE_H
 #define BOOKSTORAGE_H
 #include "Book.h"
+#include "IBookStorage.h"
 #include <vector>
 
 
-class BookStorage
-{
+class BookStorage: public IBookStorage{
     public:
-       static void saveToFile(const std::vector<Book>& books);
-       static void loadFromFile(std::vector<Book>& books);
+        void save(const std::vector<Book>& books) override;
+        void load(std::vector<Book>& books) override;
 };
 
 #endif // BOOKSTORAGE_H

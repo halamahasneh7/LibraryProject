@@ -3,7 +3,7 @@
 #include<fstream>
 #include<iostream>
 
-Library::Library(){}
+Library::Library(IBookStorage* bookStorage):storage(bookStorage){}
 
 
 void Library::addBook(const Book& book){
@@ -47,13 +47,15 @@ Book* Library::searchBook(const std::string& isbn){
 
 
 void Library::saveToFile(){
-   BookStorage::saveToFile(books);
+    if(storage)
+   storage->save(books);
 }
 
 
 void Library::loadFromFile(){
 
-  BookStorage::loadFromFile(books);
+  if(storage)
+ storage->load(books);
     }
 
 

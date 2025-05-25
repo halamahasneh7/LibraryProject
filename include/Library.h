@@ -2,15 +2,17 @@
 #define LIBRARY_H
 #include "Book.h"
 #include "BookStorage.h"
+#include "IBookStorage.h"
 #include<vector>
 
 class Library
 {
     private:
         std::vector <Book> books;
+        IBookStorage* storage;
 
     public:
-        Library();
+        Library(IBookStorage* bookStorage);
 
         void addBook(const Book& book);
 

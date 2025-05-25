@@ -1,12 +1,14 @@
 # depslib dependency file v1.0
-1747751671 source:d:\desktop\library\main.cpp
+1748191864 source:d:\desktop\library\main.cpp
 	<iostream>
-	<Book.h>
-	<Library.h>
-	<User.h>
-	<Admin.h>
-	<Member.h>
-	<AppController.h>
+	"Book.h"
+	"Library.h"
+	"User.h"
+	"Admin.h"
+	"Member.h"
+	"AppController.h"
+	"BookStorage.h"
+	"IBookStorage.h"
 
 1748180165 source:d:\desktop\library\src\book.cpp
 	"Book.h"
@@ -21,9 +23,10 @@
 1748179600 d:\desktop\library\include\user.h
 	"Library.h"
 
-1748181934 d:\desktop\library\include\library.h
+1748191737 d:\desktop\library\include\library.h
 	"Book.h"
 	"BookStorage.h"
+	"IBookStorage.h"
 	<vector>
 
 1748179795 source:d:\desktop\library\src\admin.cpp
@@ -43,7 +46,7 @@
 	"Library.h"
 	"User.h"
 
-1748187823 source:d:\desktop\library\src\library.cpp
+1748191129 source:d:\desktop\library\src\library.cpp
 	"Library.h"
 	"BookStorage.h"
 	<fstream>
@@ -64,13 +67,21 @@
 	"Admin.h"
 	"Member.h"
 
-1748187752 source:d:\desktop\library\src\bookstorage.cpp
+1748191037 source:d:\desktop\library\src\bookstorage.cpp
 	"BookStorage.h"
 	<fstream>
 	<iostream>
 	<vector>
 
-1748187792 d:\desktop\library\include\bookstorage.h
+1748191024 d:\desktop\library\include\bookstorage.h
+	"Book.h"
+	"IBookStorage.h"
+	<vector>
+
+1748191129 d:\desktop\library\include\ibookstorage.h
 	"Book.h"
 	<vector>
+
+1748191227 source:d:\desktop\library\src\ibookstorage.cpp
+	"IBookStorage.h"
 

@@ -3,7 +3,7 @@
 #include <iostream>
 #include <vector>
 
-void BookStorage::saveToFile(const std::vector<Book>& books){
+void BookStorage::save(const std::vector<Book>& books){
     std::ofstream out("Library.txt");
     if(!out){
         std::cout<<"Can't open the file to write\n";
@@ -17,7 +17,7 @@ void BookStorage::saveToFile(const std::vector<Book>& books){
 }
 
 
-void BookStorage::loadFromFile(std::vector<Book>& books){
+void BookStorage::load(std::vector<Book>& books){
 
     std::ifstream in("Library.txt");
 

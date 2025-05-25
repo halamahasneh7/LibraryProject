@@ -1,20 +1,26 @@
 #include <iostream>
-#include<Book.h>
-#include<Library.h>
-#include<User.h>
-#include<Admin.h>
-#include<Member.h>
-#include<AppController.h>
+#include "Book.h"
+#include "Library.h"
+#include "User.h"
+#include "Admin.h"
+#include "Member.h"
+#include "AppController.h"
+#include "BookStorage.h"
+#include "IBookStorage.h"
+
 
 int main(){
-Library library1;
+BookStorage storge;
+Library library1(&storge);
 library1.loadFromFile();
 
-User *user1;
 AppController controller;
+User* user1=nullptr;
 controller.login(user1,library1);
 
 library1.saveToFile();
+
+delete user1;
 
   return 0;
     }
