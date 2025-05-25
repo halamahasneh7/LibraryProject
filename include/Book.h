@@ -9,21 +9,21 @@ private:
     bool m_availability;
 
 public:
-    Book(std::string title,std::string author,std::string isbn, bool availabilty);
+    Book(std::string &title,std::string &author,std::string &isbn, bool &availabilty);
 
-    void setTitle(std::string title);
+    void setTitle(std::string &title);
     std::string getTitle()const;
 
 
-    void setAuthor(std::string author);
+    void setAuthor(std::string &author);
     std::string getAuthor()const;
 
 
-    void setISBN(std::string isbn);
+    void setISBN(std::string &isbn);
     std::string getISBN()const;
 
 
-    void setAvailability(bool availability);
+    void setAvailability(bool &availability);
     bool isAvailable()const;
 
     void display()const;

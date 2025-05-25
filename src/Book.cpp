@@ -1,10 +1,10 @@
 #include "Book.h"
 #include<iostream>
 
-Book::Book(std::string title,std::string author,std::string isbn, bool availabilty)
+Book::Book(std::string &title,std::string &author,std::string &isbn, bool &availabilty)
 :m_title(title),m_author(author),m_isbn(isbn),m_availability(availabilty){}
 
-void Book::setTitle(std::string title){
+void Book::setTitle(std::string &title){
     if(title=="")
         std::cout<<"You must enter a book title \n";
     else
@@ -15,7 +15,7 @@ std::string Book::getTitle()const{
     }
 
 
-void Book::setAuthor(std::string author){
+void Book::setAuthor(std::string &author){
     if(author=="")
         std::cout<<"You must enter an author name\n";
     else
@@ -25,7 +25,7 @@ std::string Book::getAuthor()const{
     return m_author;
     }
 
-void Book::setISBN(std::string isbn){
+void Book::setISBN(std::string &isbn){
     if(isbn=="")
         std::cout<<"You must enter an ISBN\n";
     else
@@ -36,7 +36,7 @@ std::string Book::getISBN()const{
     }
 
 
-void Book::setAvailability(bool availability){
+void Book::setAvailability(bool &availability){
    m_availability=availability;
     }
 bool Book::isAvailable()const{

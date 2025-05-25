@@ -1,4 +1,5 @@
 #include "Admin.h"
+#include "Library.h"
 #include <iostream>
 
 Admin::Admin(const std::string &name, const std::string &password):

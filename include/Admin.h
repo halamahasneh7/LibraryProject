@@ -1,14 +1,14 @@
 #ifndef ADMIN_H
 #define ADMIN_H
-#include<Library.h>
-#include<User.h>
+#include "Library.h"
+#include "User.h"
 
 class Admin:public User{
-private:
-    void userPermissionsList(Library &library)override;
 
 public:
     Admin(const std::string &name, const std::string &password);
+
+    void userPermissionsList(Library &library)override;
 
     void addNewBook(Library &library);
 

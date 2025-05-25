@@ -8,42 +8,44 @@
 	<Member.h>
 	<AppController.h>
 
-1747686498 source:d:\desktop\library\src\book.cpp
+1748180165 source:d:\desktop\library\src\book.cpp
 	"Book.h"
 	<iostream>
 
-1747733529 d:\desktop\library\include\book.h
+1748180132 d:\desktop\library\include\book.h
 	<string>
 
-1747741484 source:d:\desktop\library\src\user.cpp
+1748178318 source:d:\desktop\library\src\user.cpp
 	"User.h"
 
-1747740176 d:\desktop\library\include\user.h
-	<Library.h>
+1748179600 d:\desktop\library\include\user.h
+	"Library.h"
 
-1747734423 d:\desktop\library\include\library.h
-	<Book.h>
+1748181934 d:\desktop\library\include\library.h
+	"Book.h"
+	"BookStorage.h"
 	<vector>
 
-1747753122 source:d:\desktop\library\src\admin.cpp
+1748179795 source:d:\desktop\library\src\admin.cpp
 	"Admin.h"
+	"Library.h"
 	<iostream>
 
-1747737561 d:\desktop\library\include\admin.h
-	<Library.h>
-	<User.h>
+1748179753 d:\desktop\library\include\admin.h
+	"Library.h"
+	"User.h"
 
 1747752450 source:d:\desktop\library\src\member.cpp
 	"Member.h"
 	<iostream>
 
-1747737561 d:\desktop\library\include\member.h
-	<Library.h>
-	<Book.h>
-	<User.h>
-
-1747734567 source:d:\desktop\library\src\library.cpp
+1748180028 d:\desktop\library\include\member.h
 	"Library.h"
+	"User.h"
+
+1748187823 source:d:\desktop\library\src\library.cpp
+	"Library.h"
+	"BookStorage.h"
 	<fstream>
 	<iostream>
 
@@ -52,7 +54,7 @@
 
 1747730111 d:\desktop\library\include\libraryy.h
 
-1747753011 source:d:\desktop\library\src\appcontroller.cpp
+1747758521 source:d:\desktop\library\src\appcontroller.cpp
 	"AppController.h"
 	<iostream>
 
@@ -61,4 +63,14 @@
 	"Library.h"
 	"Admin.h"
 	"Member.h"
+
+1748187752 source:d:\desktop\library\src\bookstorage.cpp
+	"BookStorage.h"
+	<fstream>
+	<iostream>
+	<vector>
+
+1748187792 d:\desktop\library\include\bookstorage.h
+	"Book.h"
+	<vector>
 

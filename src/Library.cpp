@@ -1,4 +1,5 @@
 #include "Library.h"
+#include "BookStorage.h"
 #include<fstream>
 #include<iostream>
 
@@ -46,35 +47,13 @@ Book* Library::searchBook(const std::string& isbn){
 
 
 void Library::saveToFile(){
-    std::ofstream out("Library.txt");
-    for(int i=0;i<books.size();i++){
-        out<<books[i].getTitle()<<","<<books[i].getAuthor()<<","<<books[i].getISBN()<<","<<books[i].isAvailable()<<std::endl;
-    }
-    out.close();
-    std::cout<<"Data saved to the file successfully."<<std::endl;
+   BookStorage::saveToFile(books);
 }
 
 
 void Library::loadFromFile(){
 
-    std::ifstream in("Library.txt");
-
-        if(!in){
-            std::cout<<"File not found"<<std::endl;
-            return;
-        }
-
-        books.clear();
-
-        std::string title, author, isbn;
-        bool availablitiy;
-
-        while (std::getline(in, title,',') && std::getline(in, author,',') && std::getline(in, isbn,',') && in>>availablitiy) {
-            in.ignore();
-            books.push_back(Book(title, author, isbn, availablitiy));
-        }
-        in.close();
-        std::cout << "Library data loaded successfully"<<std::endl;
+  BookStorage::loadFromFile(books);
     }
 
 
