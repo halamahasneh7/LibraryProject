@@ -1,6 +1,5 @@
 #ifndef BOOKSTORAGE_H
 #define BOOKSTORAGE_H
-#include "Book.h"
 #include "IBookStorage.h"
 #include <vector>
 

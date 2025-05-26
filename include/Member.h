@@ -1,6 +1,5 @@
 #ifndef MEMBER_H
 #define MEMBER_H
-#include "Library.h"
 #include "User.h"
 
 class Member:public User{

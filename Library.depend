@@ -34,19 +34,17 @@
 	"Library.h"
 	<iostream>
 
-1748179753 d:\desktop\library\include\admin.h
-	"Library.h"
+1748274888 d:\desktop\library\include\admin.h
 	"User.h"
 
 1747752450 source:d:\desktop\library\src\member.cpp
 	"Member.h"
 	<iostream>
 
-1748180028 d:\desktop\library\include\member.h
-	"Library.h"
+1748274885 d:\desktop\library\include\member.h
 	"User.h"
 
-1748191129 source:d:\desktop\library\src\library.cpp
+1748192103 source:d:\desktop\library\src\library.cpp
 	"Library.h"
 	"BookStorage.h"
 	<fstream>
@@ -61,9 +59,7 @@
 	"AppController.h"
 	<iostream>
 
-1747749933 d:\desktop\library\include\appcontroller.h
-	"User.h"
-	"Library.h"
+1748274917 d:\desktop\library\include\appcontroller.h
 	"Admin.h"
 	"Member.h"
 
@@ -73,8 +69,7 @@
 	<iostream>
 	<vector>
 
-1748191024 d:\desktop\library\include\bookstorage.h
-	"Book.h"
+1748274890 d:\desktop\library\include\bookstorage.h
 	"IBookStorage.h"
 	<vector>
 
